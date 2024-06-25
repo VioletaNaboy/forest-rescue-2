@@ -1,4 +1,88 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_white: #fff;
+$_medium_green: #004d19;
+$_dark_green: #032f14;
+$_light_green: #518713;
+$_brown: #54290a;
+$_yellow: #f8df00;
+$_orange: #dc6801;
+$_red: #d80100;
+$_gray: #6b6b6b;
+$_stroke: linear-gradient(
+  110.43deg,
+  rgba(255, 255, 255, 0.6) 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_glass: linear-gradient(
+  115.95deg,
+  rgba(239, 239, 239, 0.072) 10.92%,
+  rgba(255, 255, 255, 0.0096) 96.4%
+);
+$_stroke_green: linear-gradient(
+  110.43deg,
+  #418e11 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_linear_brown: linear-gradient(
+  110.43deg,
+  #54290a 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_linear_red: linear-gradient(
+  110.43deg,
+  #d80100 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_linear_white: linear-gradient(
+  115.95deg,
+  rgba(239, 239, 239, 0.17) 10.92%,
+  rgba(255, 255, 255, 0.08) 96.4%
+);
+$_linear_orange: linear-gradient(
+  110.43deg,
+  #dc6801 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_linear_yellow: linear-gradient(
+  110.43deg,
+  #f8df00 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_linear_light-brown: linear-gradient(
+  110.43deg,
+  rgba(101, 55, 42, 0.46) 5.85%,
+  rgba(255, 255, 255, 0.1) 94.01%
+);
+$_bg_desktop: linear-gradient(
+  180deg,
+  #051f14 16.38%,
+  #397d02 44.93%,
+  #717c30 66.53%,
+  #747230 71.14%,
+  #826537 76.14%,
+  #7e5a31 78.67%,
+  #754d33 81.78%,
+  #6b4128 86.5%,
+  #211105 95.7%
+);
+$_bg_mobile: linear-gradient(
+  180deg,
+  #051f14 6.53%,
+  #397d02 38.63%,
+  #717c30 60.31%,
+  #747230 62.27%,
+  #826537 70.05%,
+  #7e5a31 76.55%,
+  #754d33 80.06%,
+  #6b4128 85.35%,
+  #211105 95.7%
+);
+$_bg_burger: linear-gradient(
+  180deg,
+  #1c1d1c 0%,
+  #101b12 53.81%,
+  #0f1a11 61.62%,
+  #011705 124.84%
+);
+
+$_bg_hero_desktop: url('src/img/bg/bg_hero_desktop.png');
+$_bg_hero_mobile: url('src/img/bg/bg_hero_mobile.png');
