@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import slides from '../data/slides.json' assert { type: 'json' };
+import slidesImages from '../data/slides.json' assert { type: 'json' };
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-function createSlides(slides) {
+function createImageSlides(container, slides) {
   slides.forEach(slide => {
     const slideDiv = document.createElement('div');
     slideDiv.className = 'swiper-slide';
@@ -23,26 +23,36 @@ function createSlides(slides) {
   });
 }
 
-createSlides(slides);
+function initializeSwiper(slidesConteiner, slides, createSlidesFunc) {
+  const slidesWrapper = document.querySelector(
+    `${slidesConteiner} .swiper-wrapper`
+  );
 
-const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  createSlidesFunc(slidesConteiner, slides);
 
-  breakpoints: {
-    320: {
-      spaceBetween: 16,
+  return new Swiper(slidesConteiner, {
+    modules: [Navigation, Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
 
-    1440: {
-      slidesPerView: 4,
-      spaceBetween: 69,
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+      },
+
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 69,
+      },
     },
-  },
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initializeSwiper('.swiper1', slidesImages, createImageSlides);
 });
