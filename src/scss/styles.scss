@@ -33,6 +33,7 @@ body {
   @include media(desktop) {
     background: $_bg_desktop;
     background-repeat: no-repeat;
+    background-clip: content-box;
   }
 }
 
@@ -41,7 +42,8 @@ body {
   margin: 0 auto;
   @include media(desktop) {
     width: 100%;
-    padding: 0 96px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
 }
 
@@ -62,11 +64,5 @@ body {
 
   @include media(desktop) {
     font-size: 42px;
-  }
-}
-.container {
-  padding: 0 16px;
-  @include media(desktop) {
-    padding: 0 96px;
   }
 }
