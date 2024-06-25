@@ -30,14 +30,19 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  slidesPerView: 4,  
-  spaceBetween: 69,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+    320: {
+      spaceBetween: 16,
+    },
+
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 69,
+    },
   },
 });

@@ -1,3 +1,61 @@
 .gallery_section {
-  background: rgb(5, 82, 11);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.gallery_section::before {
+  position: absolute;
+  z-index: 5;
+  content: '';
+  display: block;
+  background-image: url('/img/bg/decor1-mob.png');
+  background-repeat: no-repeat;
+  left: -40px;
+  bottom: -126px;
+  width: 193px;
+  height: 166px;
+  background-size: contain;
+
+  @include media(desktop) {
+    background-image: url('/img/bg/decor1-desk.png');
+    width: 455px;
+    height: 391px;
+    left: -80px;
+    bottom: -280px;
+  }
+}
+
+.gallery_section::after {
+  position: absolute;
+  z-index: 5;
+  content: '';
+  display: block;
+  background-image: url('/img/bg/decor1-mob.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include media(desktop) {
+    background-image: url('/img/bg/decor5-desk.png');
+    width: 338px;
+    height: 258px;
+    right: -90px;
+    bottom: -90px;
+  }
+}
+
+.gallery_title {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.gallery-container {
+  width: 280px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 1000px;
+  }
 }
