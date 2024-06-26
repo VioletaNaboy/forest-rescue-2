@@ -1,12 +1,11 @@
 @import './header.scss';
+@import './hero.scss';
 @import './slider.scss';
 @import './gallery.scss';
-
-@import './vite-promo.scss';
+@import './mobileMenu.scss';
 @import './common/fonts';
 @import './common/vars';
 @import './common/mixins';
-
 :root {
   font-family: 'Roboto Flex', Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -33,7 +32,12 @@ body {
   @include media(desktop) {
     background: $_bg_desktop;
     background-repeat: no-repeat;
+    background-clip: content-box;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .container {
@@ -41,7 +45,8 @@ body {
   margin: 0 auto;
   @include media(desktop) {
     width: 100%;
-    padding: 0 96px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
 }
 

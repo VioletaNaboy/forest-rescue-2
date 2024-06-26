@@ -1,0 +1,50 @@
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 18, 7, 0.48);
+  filter: blur(0px);
+  z-index: 110;
+}
+
+.backdrop.active {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  top: 0;
+  right: 0;
+  z-index: 115;
+  background: linear-gradient(
+    180deg,
+    #1c1d1c 0%,
+    #101b12 53.81%,
+    #0f1a11 61.62%,
+    #011705 124.84%
+  );
+  padding: 44px 25px;
+}
+.close-burger {
+  position: absolute;
+  top: 25px;
+  left: 13px;
+}
+.nav-list-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: flex-end;
+}
