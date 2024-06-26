@@ -26,13 +26,7 @@
   top: 0;
   right: 0;
   z-index: 115;
-  background: linear-gradient(
-    180deg,
-    #1c1d1c 0%,
-    #101b12 53.81%,
-    #0f1a11 61.62%,
-    #011705 124.84%
-  );
+  background: $_bg_burger;
   padding: 44px 25px;
 }
 .close-burger {
