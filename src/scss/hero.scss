@@ -1,0 +1,93 @@
+.hero {
+  height: 632px;
+  padding-top: 80px !important;
+  @include media(desktop) {
+    height: 900px;
+    padding-top: 118px !important;
+  }
+  background-image: $_bg_hero;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 26px;
+  text-align: center;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+.hero-title {
+  font-family: 'Fredoka';
+  color: $_yellow;
+  font-size: 32px;
+  line-height: 1.07;
+  @include media(desktop) {
+    font-size: 56px;
+  }
+}
+.google-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 10px;
+  width: 153px;
+  height: 47px;
+  @include media(desktop) {
+    width: 285px;
+    height: 85px;
+  }
+}
+.hero-title span {
+  color: $_red;
+}
+.text-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  @include media(desktop) {
+    gap: 64px;
+    align-items: start;
+    top: 131px;
+  }
+}
+.image-wrapper {
+  position: relative;
+  width: 292px;
+  height: 317px;
+  @include media(desktop) {
+    width: 718px;
+    height: 722px;
+  }
+}
+.first-img {
+  position: absolute;
+  z-index: 10;
+  width: 269.285px;
+  height: 140.97px;
+  left: 0;
+  top: 0;
+  @include media(desktop) {
+    width: 671px;
+    height: 351px;
+  }
+}
+.second-img {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: 1;
+  width: 221.589px;
+  height: 150.686px;
+  @include media(desktop) {
+    width: 458px;
+    height: 327px;
+  }
+}

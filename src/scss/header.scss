@@ -1,30 +1,69 @@
-// .header {
-//   padding: 20px 0;
-// }
+.header {
+  width: 100%;
+  color: transparent;
+  position: fixed;
+  z-index: 100;
+  padding: 36px 0;
+}
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 40px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.nav-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.burger {
+  @include media(desktop) {
+    display: none;
+  }
+}
+.nav-item {
+  cursor: pointer;
+}
+.nav-link {
+  font-weight: 500;
+  color: $_white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-//   @include media(tablet) {
-//     justify-content: flex-start;
-//   }
+  @include media(to-desktop) {
+    padding: 24px 0;
+  }
 
-//   @include media(desktop) {
-//     justify-content: flex-end;
-//   }
-// }
+  @include media(desktop) {
+    padding: 4px 16px;
+  }
 
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
+  position: relative; // Додаємо для коректної роботи псевдоелемента
+}
 
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// }
+.nav-link:hover,
+.nav-link:focus {
+  border-radius: 4px;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  padding: 1px; // Додаємо відступ для рамки
+  background: linear-gradient($_linear_yellow, #f8df00);
+  mask-composite: exclude;
+  pointer-events: none; // Зробимо псевдоелемент непридатним для кліків
+  z-index: -1; // Щоб псевдоелемент був під основним
+}
