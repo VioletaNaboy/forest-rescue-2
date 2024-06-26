@@ -1,0 +1,78 @@
+.disclaimer-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.disclaimer-title {
+  margin-bottom: 62px;
+
+  @include media(desktop) {
+    margin-bottom: 88px;
+  }
+}
+
+.content-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 254px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-left: 2.769px solid $_white;
+  background: $_stroke;
+  border-radius: 28px;
+
+  @include media(desktop) {
+    width: 1248px;
+    height: 222px;
+  }
+}
+
+.disclaimer-content {
+  position: relative;
+  z-index: 1;
+  width: 282px;
+  height: 248px;
+  box-sizing: border-box;
+  border-radius: 28px;
+
+  background: $_linear_white;
+
+  padding: 53px 16px 30px 16px;
+
+  @include media(desktop) {
+    width: 1242px;
+    height: 216px;
+    padding: 69px;
+  }
+}
+
+.disclaimer-content::before {
+  position: absolute;
+  z-index: 20;
+  width: 67px;
+  height: 72px;
+  content: '';
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('/img/disclaimer/image1.png');
+
+  @include media(desktop) {
+    width: 87px;
+    height: 98px;
+    top: -49px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
