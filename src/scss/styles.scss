@@ -32,6 +32,9 @@
     font-size: 22px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   overflow-x: hidden;
