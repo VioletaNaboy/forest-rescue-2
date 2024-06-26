@@ -34,13 +34,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: $_stroke;
   border-radius: 10px;
-  width: 153px;
-  height: 47px;
+  width: 158px;
+  height: 52px;
+  padding: 2px;
   @include media(desktop) {
-    width: 285px;
-    height: 85px;
+    width: 288px;
+    height: 88px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $_stroke_green;
+  }
+  &:active {
+    background-color: $_light_green;
   }
 }
 .hero-title span {

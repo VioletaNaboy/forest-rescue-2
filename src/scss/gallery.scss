@@ -1,7 +1,12 @@
 .gallery_section {
+  width: 100%;
   position: relative;
   z-index: 1;
   text-align: center;
+  padding: 22px 0;
+  @include media(desktop) {
+    padding: 70px 0;
+  }
 }
 
 .gallery_section::before {
