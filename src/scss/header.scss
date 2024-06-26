@@ -4,6 +4,21 @@
   position: fixed;
   z-index: 100;
   padding: 36px 0;
+  .nav-link.active {
+    background: $_dark_green;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -2px;
+      border-radius: inherit;
+      background: $_stroke_green;
+    }
+  }
 }
 
 .nav {
@@ -34,36 +49,47 @@
   font-weight: 500;
   color: $_white;
   cursor: pointer;
-  transition: all 0.3s ease;
-
+  position: relative;
+  background: transparent;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
   @include media(to-desktop) {
     padding: 24px 0;
   }
-
   @include media(desktop) {
     padding: 4px 16px;
   }
-
-  position: relative; // Додаємо для коректної роботи псевдоелемента
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  border-radius: 4px;
+  background: $_dark_green;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: $_linear_yellow;
+  }
 }
-
-.nav-link:hover::before,
-.nav-link:focus::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 4px;
-  padding: 1px; // Додаємо відступ для рамки
-  background: linear-gradient($_linear_yellow, #f8df00);
-  mask-composite: exclude;
-  pointer-events: none; // Зробимо псевдоелемент непридатним для кліків
-  z-index: -1; // Щоб псевдоелемент був під основним
+.nav-link:active {
+  background: $_dark_green;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: $_yellow;
+  }
 }
