@@ -36,6 +36,10 @@ body {
   }
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 288px;
   margin: 0 auto;
