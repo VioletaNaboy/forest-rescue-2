@@ -1,0 +1,56 @@
+.terms-section {
+  padding: 96px 0 32px 0;
+  text-align: center;
+
+  @include media(desktop) {
+    padding: 187px 0 80px 0;
+  }
+}
+
+.terms-title {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: start;
+
+  @include media(desktop) {
+    gap: 32px;
+  }
+}
+
+.title-secondary {
+  font-weight: 700;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+}
+
+.terms-text {
+  font-size: 12px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.terms-text__accent {
+
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 8px 0;
+  @include media(desktop) {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+}
