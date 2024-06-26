@@ -31,12 +31,12 @@
 }
 
 body {
-  background: $_bg_mobile;
-  background-repeat: no-repeat;
-
+  overflow-x: hidden;
+  background: $_bg_mobile no-repeat center center fixed;
+  background-size: cover;
   @include media(desktop) {
-    background: $_bg_desktop;
-    background-repeat: no-repeat;
+    background: $_bg_desktop no-repeat center center fixed;
+    background-size: cover;
     background-clip: content-box;
   }
 }
