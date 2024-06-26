@@ -2,6 +2,7 @@
 @import './hero.scss';
 @import './slider.scss';
 @import './gallery.scss';
+@import './disclaimer.scss';
 @import './mobileMenu.scss';
 @import './common/fonts';
 @import './common/vars';
@@ -64,6 +65,7 @@ body.no-scroll {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-transform: uppercase;
 
   @include media(desktop) {
     font-size: 42px;
