@@ -2,11 +2,14 @@
 @import './hero.scss';
 @import './slider.scss';
 @import './gallery.scss';
+@import './reviews.scss';
 @import './disclaimer.scss';
 @import './mobileMenu.scss';
+
 @import './common/fonts';
 @import './common/vars';
 @import './common/mixins';
+
 :root {
   font-family: 'Roboto Flex', Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;

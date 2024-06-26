@@ -1,0 +1,33 @@
+[
+  {
+    "urlSvg": "./img/icons/stars.svg",
+    "description": "Love the theme and the meaningful gameplay. It's fun and for a good cause!",
+    "urlAvatar": "./img/reviews/image1.png",
+    "altAvatar": "EcoElla",
+    "name": "EcoElla"
+  },
+  {
+    "urlSvg": "./img/icons/stars.svg",
+    "description": "Challenging levels that really make you think. Great way to pass the time.",
+    "urlAvatar": "./img/reviews/image2.png",
+    "altAvatar": "TreeHuggerTom",
+    "name": "TreeHuggerTom"
+  }
+  ,
+  {
+    "urlSvg": "./img/icons/stars.svg",
+    "description": "Adorable characters and a story that hooks you in. The updates keep it fresh!",
+    "urlAvatar": "./img/reviews/image3.png",
+    "altAvatar": "ForestFred",
+    "name": "ForestFred"
+  }
+  ,
+  {
+    "urlSvg": "./img/icons/stars.svg",
+    "description": "A perfect blend of fun and strategy with lovely graphics. Highly recommend!",
+    "urlAvatar": "./img/reviews/image4.png",
+    "altAvatar": "NatureNancy",
+    "name": "NatureNancy"
+  }
+
+]
