@@ -5,13 +5,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import slidesImages from '../data/slides.json' assert { type: 'json' };
+import slidesImages from '../data/gallery.json' assert { type: 'json' };
 import reviews from '../data/reviews.json' assert { type: 'json' };
 
 const wrapper = document.querySelector('.reviews-list__desktop');
-createReviewsItems(wrapper, reviews)
+createReviewsItems(wrapper, reviews);
 
-function createImageSlides(wrapper, slides) { 
+function createImageSlides(wrapper, slides) {
   slides.forEach(slide => {
     const slideDiv = document.createElement('div');
     slideDiv.className = 'swiper-slide swiper-slide__gallery';
@@ -25,10 +25,10 @@ function createImageSlides(wrapper, slides) {
   });
 }
 
-function createReviewsItems(wrapper, slides) { 
+function createReviewsItems(wrapper, slides) {
   slides.forEach((item, index) => {
     const li = document.createElement('li');
-    li.className = `swiper-slide swiper-slide__reviews reviews-li reviews-li-${index}`; 
+    li.className = `swiper-slide swiper-slide__reviews reviews-li reviews-li-${index}`;
 
     const box = document.createElement('div');
     box.className = 'reviews-box';
@@ -59,17 +59,17 @@ function createReviewsItems(wrapper, slides) {
     box.appendChild(divUser);
 
     li.appendChild(box);
-    wrapper.appendChild(li); 
+    wrapper.appendChild(li);
   });
 }
 
 function initializeSwiper(containerSelector, slides, createSlidesFunc) {
-  const swiperContainer = document.querySelector(containerSelector); 
-  const wrapper = swiperContainer.querySelector('.swiper-wrapper'); 
+  const swiperContainer = document.querySelector(containerSelector);
+  const wrapper = swiperContainer.querySelector('.swiper-wrapper');
 
-  createSlidesFunc(wrapper, slides); 
+  createSlidesFunc(wrapper, slides);
 
-  return new Swiper(containerSelector, {
+  const swiper = new Swiper(containerSelector, {
     modules: [Navigation, Pagination],
     pagination: {
       el: '.swiper-pagination',
@@ -80,6 +80,7 @@ function initializeSwiper(containerSelector, slides, createSlidesFunc) {
     },
     breakpoints: {
       320: {
+        slidesPerView: 1,
         spaceBetween: 16,
       },
       1440: {
@@ -88,10 +89,15 @@ function initializeSwiper(containerSelector, slides, createSlidesFunc) {
       },
     },
   });
+
+  window.addEventListener('resize', () => {
+    swiper.update();
+  });
+
+  return swiper;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeSwiper('.swiper1', slidesImages, createImageSlides);
   initializeSwiper('.swiper2', reviews, createReviewsItems);
 });
-

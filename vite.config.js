@@ -41,7 +41,7 @@ export default defineConfig(({ command }) => {
         },
         jpg: {
           // https://sharp.pixelplumbing.com/api-output#jpeg
-          quality: 60,
+          quality: 80,
         },
       }),
     ],
