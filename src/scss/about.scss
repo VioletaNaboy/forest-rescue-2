@@ -26,7 +26,9 @@
     gap: 24px;
   }
   .google-play {
-    margin: 0 auto;
-    margin-top: 28px;
+    @include media(to-desktop) {
+      margin: 0 auto;
+      margin-top: 28px;
+    }
   }
 }
