@@ -4,6 +4,7 @@
   position: fixed;
   z-index: 100;
   padding: 36px 0;
+  backdrop-filter: blur(10px);
   .nav-link.active {
     background: $_dark_green;
     &:before {
