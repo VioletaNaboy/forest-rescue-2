@@ -110,8 +110,10 @@
     height: 59px !important;
 
     border-radius: 8px;
+
     background: url('/img/arrow.svg') no-repeat center center, $_light_green;
     backdrop-filter: blur(38.073px);
+
     z-index: -1;
     content: '';
     display: block;
