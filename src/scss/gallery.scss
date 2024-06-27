@@ -1,7 +1,12 @@
 .gallery_section {
+  width: 100%;
   position: relative;
   z-index: 1;
   text-align: center;
+  padding: 22px 0;
+  @include media(desktop) {
+    padding: 70px 0;
+  }
 }
 
 .gallery_section::before {
@@ -37,10 +42,10 @@
 
   @include media(desktop) {
     background-image: url('/img/bg/decor5-desk.png');
-    width: 338px;
+    width: 280px;
     height: 258px;
-    right: -90px;
-    bottom: -90px;
+    right: -0px;
+    bottom: -140px;
   }
 }
 

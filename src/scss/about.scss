@@ -1,0 +1,34 @@
+.section-about {
+  .title {
+    text-align: center;
+    @include media(to-desktop) {
+      margin-bottom: 24px;
+    }
+  }
+}
+.wrapper-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.text-wrapper-about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  @include media(desktop) {
+    width: 616px;
+    gap: 24px;
+  }
+  .google-play {
+    @include media(to-desktop) {
+      margin: 0 auto;
+      margin-top: 28px;
+    }
+  }
+}
