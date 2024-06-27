@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "glob": "^8.1.0",
     "sass": "^1.77.6",
     "sharp": "^0.33.4",
