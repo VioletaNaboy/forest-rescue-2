@@ -1,24 +1,24 @@
 [
   {
-    "src": "../img/benefits/star.png",
+    "src": "/img/benefits/star.png",
     "alt": "Star",
     "value": "4.8",
     "description": "Star"
   },
   {
-    "src": "/src/img/benefits/downloads.png",
+    "src": "/img/benefits/downloads.png",
     "alt": "Downloads",
     "value": "50 000+",
     "description": "Downloads"
   },
   {
-    "src": "../../img/benefits/reviews.png",
+    "src": "/img/benefits/reviews.png",
     "alt": "Reviews",
     "value": "1 000+",
     "description": "Reviews"
   },
   {
-    "src": "./img/benefits/flash.png",
+    "src": "/img/benefits/flash.png",
     "alt": "Convenient gaming",
     "value": "Online/Offline",
     "description": "Convenient gaming"
