@@ -110,16 +110,17 @@
     height: 59px !important;
 
     border-radius: 8px;
-    background: url('/img/arrow.svg') no-repeat center center, $_glass,
-      $_light_green;
+
+    background: url('/img/arrow.svg') no-repeat center center, $_light_green;
+    backdrop-filter: blur(38.073px);
+
     z-index: -1;
     content: '';
     display: block;
     background-position: center;
   }
   &.swiper-button-next::before {
-    background: url('/img/arrow.svg') no-repeat center center, $_glass,
-      $_medium_green;
+    background: url('/img/arrow.svg') no-repeat center center, $_medium_green;
     transform: translate(-50%, -50%) rotate(180deg);
   }
 

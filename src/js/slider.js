@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import slidesImages from '../data/slides.json' assert { type: 'json' };
 import reviews from '../data/reviews.json' assert { type: 'json' };
 
+const wrapper = document.querySelector('.reviews-list__desktop');
+createReviewsItems(wrapper, reviews)
 
 function createImageSlides(wrapper, slides) { 
   slides.forEach(slide => {
@@ -25,7 +27,7 @@ function createImageSlides(wrapper, slides) {
 
 function createReviewsItems(wrapper, slides) { 
   slides.forEach((item, index) => {
-    const li = document.createElement('div');
+    const li = document.createElement('li');
     li.className = `swiper-slide swiper-slide__reviews reviews-li reviews-li-${index}`; 
 
     const box = document.createElement('div');
