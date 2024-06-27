@@ -33,7 +33,7 @@ export default defineConfig(({ command }) => {
       ViteImageOptimizer({
         png: {
           // https://sharp.pixelplumbing.com/api-output#png
-          quality: 60,
+          quality: 80,
         },
         jpeg: {
           // https://sharp.pixelplumbing.com/api-output#jpeg
