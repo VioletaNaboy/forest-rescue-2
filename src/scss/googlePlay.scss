@@ -1,0 +1,22 @@
+.google-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $_stroke;
+  border-radius: 10px;
+  width: 158px;
+  height: 52px;
+  padding: 2px;
+  z-index: 10;
+  @include media(desktop) {
+    width: 288px;
+    height: 88px;
+  }
+  &:hover,
+  &:focus {
+    background-image: $_stroke_green;
+  }
+  &:active {
+    background-color: $_light_green;
+  }
+}
