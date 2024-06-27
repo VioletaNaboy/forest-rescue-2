@@ -12,7 +12,7 @@
     "description": "Downloads"
   },
   {
-    "src": "/img/benefits/reviews.png",
+    "src": "../../img/benefits/reviews.png",
     "alt": "Reviews",
     "value": "1 000+",
     "description": "Reviews"
