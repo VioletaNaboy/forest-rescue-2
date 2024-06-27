@@ -71,4 +71,4 @@
 <img src="/src/public/img/readme/html.png" alt="hero images" width="100" align="center">
 <img src="/src/public/img/readme/scss.png" alt="hero images" width="150" align="center">
 <img src="/src/public/img/readme/js.png" alt="hero images" width="80" align="center">
-</div>np
+</div>
