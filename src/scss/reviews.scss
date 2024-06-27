@@ -17,6 +17,7 @@
 
   @include media(desktop) {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
     width: 1248px;
     height: 310px;

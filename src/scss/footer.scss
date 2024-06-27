@@ -65,4 +65,11 @@
   }
 }
 
+.footer-page__link:hover,
+.footer-page__link:focus {
+  color: $_yellow;
+}
 
+.footer-page__link:active {
+  color: $_orange;
+}

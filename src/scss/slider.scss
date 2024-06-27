@@ -111,7 +111,7 @@
 
     border-radius: 8px;
 
-    background: url('/img/arrow.svg') no-repeat center center, $_light_green;
+    background: url('/img/icons/arrow.svg') no-repeat center center, $_light_green;
     backdrop-filter: blur(38.073px);
 
     z-index: -1;
@@ -120,7 +120,7 @@
     background-position: center;
   }
   &.swiper-button-next::before {
-    background: url('/img/arrow.svg') no-repeat center center, $_medium_green;
+    background: url('/img/icons/arrow.svg') no-repeat center center, $_medium_green;
     transform: translate(-50%, -50%) rotate(180deg);
   }
 
