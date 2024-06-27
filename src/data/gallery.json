@@ -1,0 +1,10 @@
+[
+  { "src": "./img/gallery/image-1.png", "alt": "Slide 1" },
+  { "src": "./img/gallery/image-2.png", "alt": "Slide 2" },
+  { "src": "./img/gallery/image-3.png", "alt": "Slide 3" },
+  { "src": "./img/gallery/image-4.png", "alt": "Slide 4" },
+  { "src": "./img/gallery/image-5.png", "alt": "Slide 5" },
+  { "src": "./img/gallery/image-6.png", "alt": "Slide 6" },
+  { "src": "./img/gallery/image-7.png", "alt": "Slide 7" },
+  { "src": "./img/gallery/image-8.png", "alt": "Slide 8" }
+]
