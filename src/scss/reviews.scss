@@ -17,8 +17,7 @@
 
   @include media(desktop) {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: center;  
     width: 1248px;
     height: 310px;
     gap: 43px;
@@ -32,19 +31,21 @@
 }
 
 .reviews-li {
+  box-sizing: border-box;
   position: relative;
   width: 250px;
   height: 226px;
-  padding: 65px 0px 28px 0px;
+  padding: 65px 16px 28px 16px;
   border-radius: 28px;
   background: $_linear_white;
 
   @include media(desktop) {
-    width: 280px;
-    height: 270px;
-    padding: 79px 16px 30px 16px;
+    width: 280px !important;
+    height: 270px !important;
+    padding: 79px 16px 30px;
   }
 }
+
 
 .reviews-li::before {
   position: absolute;
@@ -118,6 +119,7 @@
 }
 
 .reviews-box {
+  box-sizing: border-box;
   width: 218px;
   margin-left: auto;
   margin-right: auto;
@@ -135,6 +137,7 @@
 
   @include media(desktop) {
     flex-direction: row;
+    justify-content: start;
   }
 }
 
