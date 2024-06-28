@@ -17,7 +17,7 @@
 
   @include media(desktop) {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     width: 1248px;
     height: 310px;
     gap: 43px;
@@ -45,7 +45,6 @@
     padding: 79px 16px 30px;
   }
 }
-
 
 .reviews-li::before {
   position: absolute;

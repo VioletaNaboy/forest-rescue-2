@@ -47,8 +47,14 @@
 }
 .image-wrapper {
   position: relative;
-  width: 292px;
   height: 317px;
+
+  @include media(mobile) {
+    width: 292px;
+    max-height: unset;
+    height: 317px;
+  }
+
   @include media(desktop) {
     width: 718px;
     height: 722px;
@@ -57,10 +63,14 @@
 .first-img {
   position: absolute;
   z-index: 10;
-  width: 269.285px;
-  height: 140.97px;
+
   left: 0;
   top: 0;
+
+  @include media(mobile) {
+    width: 269.285px;
+    height: 140.97px;
+  }
   @include media(desktop) {
     width: 671px;
     height: 351px;
@@ -71,8 +81,11 @@
   top: 40%;
   right: 10%;
   z-index: 1;
-  width: 221.589px;
-  height: 150.686px;
+
+  @include media(mobile) {
+    width: 221px;
+    height: 150px;
+  }
   @include media(desktop) {
     width: 458px;
     height: 327px;

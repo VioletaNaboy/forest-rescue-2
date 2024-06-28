@@ -1,8 +1,12 @@
 .swiper-container {
-  width: 320px;
+  // width: 320px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  padding: 0 16px;
+  @include media(mobile) {
+    width: 320px;
+  }
 }
 
 .swiper-container__gallery {
@@ -22,12 +26,21 @@
   }
 }
 
-.swiper {
-  overflow: visible !important;
+.swiper {  
+
+  @include media(mobile) {
+    overflow: visible !important;
+  }
+
 }
+
 .swiper1 {
-  width: 260px;
+  // width: 260px;
   margin-top: 10px;
+
+  @include media(mobile) {
+    width: 260px;
+  }
 
   @include media(desktop) {
     width: 1248px;
@@ -37,7 +50,11 @@
 }
 
 .swiper2 {
-  width: 250px;
+  // width: 250px;
+
+  @include media(mobile) {
+    width: 250px;
+  }
 }
 
 .swiper-wrapper {
@@ -111,7 +128,8 @@
 
     border-radius: 8px;
 
-    background: url('/img/icons/arrow.svg') no-repeat center center, $_light_green;
+    background: url('/img/icons/arrow.svg') no-repeat center center,
+      $_light_green;
     backdrop-filter: blur(38.073px);
 
     z-index: -1;
@@ -120,7 +138,8 @@
     background-position: center;
   }
   &.swiper-button-next::before {
-    background: url('/img/icons/arrow.svg') no-repeat center center, $_medium_green;
+    background: url('/img/icons/arrow.svg') no-repeat center center,
+      $_medium_green;
     transform: translate(-50%, -50%) rotate(180deg);
   }
 

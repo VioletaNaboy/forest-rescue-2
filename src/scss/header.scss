@@ -4,6 +4,7 @@
   position: fixed;
   z-index: 100;
   padding: 36px 0;
+  padding-right: 16px;
   backdrop-filter: blur(10px);
   .nav-link.active {
     background: $_dark_green;
@@ -20,6 +21,10 @@
       background: $_stroke_green;
     }
   }
+  @include media(mobile) {
+    padding-right: 0;
+  }
+
 }
 
 .nav {

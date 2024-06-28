@@ -78,6 +78,8 @@ function initializeSwiper(containerSelector, slides, createSlidesFunc) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    slidesPerView: 1.1,
+    spaceBetween: 8,
     breakpoints: {
       320: {
         slidesPerView: 1,

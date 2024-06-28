@@ -81,6 +81,7 @@ body.no-scroll {
   bottom: 130px;
   left: 50%;
   transform: translateX(-50%);
+  background-size: 320px 600px;
   width: 320px;
   height: 600px;
   content: '';
@@ -88,6 +89,10 @@ body.no-scroll {
   background-image: url('/img/bg/decor4-mob.png');
   background-repeat: no-repeat;
   background-size: cover;
+  @include media(mobile) {
+    width: 320px;
+    height: 600px;
+  }
 
   @include media(desktop) {
     bottom: 50px;
@@ -99,8 +104,14 @@ body.no-scroll {
 }
 
 .container {
-  width: 288px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+
+  @include media(mobile) {
+    width: 320px;
+  }
+
   @include media(desktop) {
     width: 100%;
     padding-left: 96px;

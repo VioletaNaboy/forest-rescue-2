@@ -1,6 +1,5 @@
 .disclaimer-container {
   text-align: center;
-  margin: 0 auto;
 }
 
 .disclaimer-title {
@@ -15,14 +14,16 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  width: 288px;
-  height: 254px;
+
   box-sizing: border-box;
   border-radius: 28px;
   margin: 0 auto;
   background: $_linear_white;
 
   padding: 53px 16px 30px 16px;
+
+  @include media(mobile) {
+  }
 
   @include media(desktop) {
     width: 1248px;
@@ -72,4 +73,3 @@
     font-size: 24px;
   }
 }
-
