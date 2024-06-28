@@ -1,9 +1,9 @@
 .swiper-container {
-  // width: 320px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   padding: 0 16px;
+
   @include media(mobile) {
     width: 320px;
   }
@@ -26,16 +26,13 @@
   }
 }
 
-.swiper {  
-
+.swiper {
   @include media(mobile) {
     overflow: visible !important;
   }
-
 }
 
 .swiper1 {
-  // width: 260px;
   margin-top: 10px;
 
   @include media(mobile) {
@@ -50,8 +47,6 @@
 }
 
 .swiper2 {
-  // width: 250px;
-
   @include media(mobile) {
     width: 250px;
   }
@@ -75,7 +70,7 @@
 }
 
 .swiper-slide__reviews {
-  width: 250px !important;
+  width: 250px;
   height: 226px;
 }
 

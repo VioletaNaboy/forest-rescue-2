@@ -33,11 +33,14 @@
 .reviews-li {
   box-sizing: border-box;
   position: relative;
-  width: 250px;
-  height: 226px;
   padding: 65px 16px 28px 16px;
   border-radius: 28px;
   background: $_linear_white;
+
+  @include media(mobile) {
+    width: 250px;
+    height: 226px;
+  }
 
   @include media(desktop) {
     width: 280px !important;
@@ -119,9 +122,13 @@
 
 .reviews-box {
   box-sizing: border-box;
-  width: 218px;
   margin-left: auto;
   margin-right: auto;
+
+  @include media(mobile) {
+    width: 218px;
+  }
+
   @include media(desktop) {
     width: 247px;
     margin-left: 0;
