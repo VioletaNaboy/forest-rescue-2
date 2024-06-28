@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
+  const defaultActiveLink = document.querySelector('.nav-link[href="/#hero"]'); 
 
-  window.addEventListener('scroll', function () {
+  function updateActiveNavLink() {
     let current = '';
 
     sections.forEach(section => {
@@ -19,5 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
         link.classList.add('active');
       }
     });
-  });
+
+    if (!current && defaultActiveLink) {
+      defaultActiveLink.classList.add('active');
+    }
+  }
+
+  updateActiveNavLink();
+  window.addEventListener('scroll', updateActiveNavLink);
+
+  window.updateActiveNavLink = updateActiveNavLink;
 });
