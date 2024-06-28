@@ -63,8 +63,7 @@
   }
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover {
   background: $_dark_green;
   &:before {
     content: '';
@@ -79,6 +78,7 @@
     background: $_linear_yellow;
   }
 }
+
 .nav-link:active {
   background: $_dark_green;
   &:before {
